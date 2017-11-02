@@ -49,3 +49,18 @@ def draw?(board)
     end
   end
 end
+
+def over?(board)
+  if full?(board) || won?(board) || draw?(board)
+    true
+  else
+    false
+  end
+end
+
+def winner(board)
+  isWin = win?(board)
+  if isWin != false
+    return board[isWin[0]]
+  end
+end
