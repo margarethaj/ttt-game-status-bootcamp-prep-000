@@ -35,11 +35,9 @@ def full?(board)
   board.each do |element|
     if element == "" || element == " "
       false
-    else
-      true
     end
   end
-  false
+  true
 end
 
 def draw?(board)
