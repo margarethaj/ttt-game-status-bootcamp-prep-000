@@ -29,3 +29,13 @@ def won?(board)
     end
   end
 end
+
+def full?(board)
+  board.each do |element|
+    if element == "" || element == " "
+      false
+    else
+      true
+    end
+  end
+end
