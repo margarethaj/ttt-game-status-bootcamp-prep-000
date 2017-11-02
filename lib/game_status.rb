@@ -47,7 +47,6 @@ def draw?(board)
     else
       true
     end
-    true
   end
   false
 end
